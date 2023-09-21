@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Read all notifications",
+  "version": "1.0",
+  "description": "Ler todas as notificações do painel backoffice",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_title": "Marcar como lida",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
+
