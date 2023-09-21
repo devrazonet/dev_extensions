@@ -1,4 +1,4 @@
-# Dev Entensions
+# Dev Extensions
 
 *Repository to save all browsers extensions for internal use from Razonet Team*
 
