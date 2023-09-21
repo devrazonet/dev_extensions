@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Ticket Button",
+  "version": "1.0",
+  "description": "Exibir botão dos tickets no menu",
+  "permissions": ["activeTab", "scripting","<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
