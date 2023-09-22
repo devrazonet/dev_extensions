@@ -3,9 +3,10 @@
   "name": "Ticket Button",
   "version": "1.0",
   "description": "Exibir botão dos tickets no menu",
-  "permissions": ["activeTab", "scripting","<all_urls>"],
+  "permissions": ["tabs","activeTab", "scripting","<all_urls>"],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "browser_action": {
     "default_popup": "popup.html"
