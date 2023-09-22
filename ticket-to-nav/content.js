@@ -1,10 +1,12 @@
 var menu = document.querySelector(".navigation-menu");
-var li = document.createElement('li');
-var a = document.createElement('a');
+const originalTicketMenu = document.querySelector('.navigation-menu .submenu li#tour-tickets');
 
-a.style = 'background: #eee;border-radius: 4px;';
-a.href = 'https://backoffice.razonet.com.br/painel/v1/tickets';
-a.textContent = 'Meus Tickets';
+if(originalTicketMenu){
+    const cloneTicketMenu = originalTicketMenu.cloneNode(true);
+    const setUrlTicket = 'https://backoffice.razonet.com.br/painel/v1/tickets';
 
-li.appendChild(a);
-menu.appendChild(li);
+    cloneTicketMenu.style.cssText = "border:4px outside #fff;background: #eee;border-radius: 4px;"
+    cloneTicketMenu.querySelector('a').href = setUrlTicket;
+    
+    menu.appendChild(cloneTicketMenu)
+}
